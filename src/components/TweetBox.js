@@ -1,6 +1,6 @@
 import React from 'react';
 import './TweetBox.scss';
-import picture from './images/article-906.jpg';
+import picture from './images/trump.jpg';
 import retweet from './images/refresh.svg';
 import twitterBadge from './twitter-verification.png';
 
@@ -64,14 +64,14 @@ class TweetBox extends React.Component {
         <h1 className="glitch">Auto-Generated Tweets!</h1>
         <div className="tweetBox">
           <img
-            id="anonPicture"
+            id="trumpPicture"
             src={picture}
             alt="TrumpPicture"
             width="50px"
             align="left"
           />
           <div className="username">
-            <strong>Random Guy</strong>
+            <strong>Donald J. Trump</strong>
             <img
               id="twitterVerified"
               src={twitterBadge}
@@ -79,7 +79,7 @@ class TweetBox extends React.Component {
               width="20px"
             />{' '}
             <br />
-            @somePoliticalGuy
+            @realDonaldTrump
           </div>
           <div className="uwu">
             <span className="follow">
