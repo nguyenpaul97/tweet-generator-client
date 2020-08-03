@@ -124,9 +124,9 @@ class TweetBox extends React.Component {
             </li>
           </ul>
         </div>
-        <button className="big-btn" onClick={this.handleClick}>
+        <a className="big-btn cta bg" onClick={this.handleClick}>
           Generate a Tweet!
-        </button>
+        </a>
       </div>
     );
   }
