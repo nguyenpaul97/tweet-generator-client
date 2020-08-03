@@ -1,5 +1,7 @@
 import React from 'react';
 import TweetBox from './components/TweetBox.js';
+import Menu from './components/Menu.js';
+import './App.css';
 
 class App extends React.Component {
   componentDidMount() {
@@ -8,8 +10,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <TweetBox />
+      <div className="container">
+        <div className="App">
+          {/* <Menu /> */}
+          <TweetBox />
+        </div>
       </div>
     );
   }
