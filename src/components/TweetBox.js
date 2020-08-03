@@ -1,6 +1,7 @@
 import React from 'react';
 import './TweetBox.css';
 import picture from './trump.jpg';
+import retweet from './refresh.svg';
 import twitterBadge from './twitter-verification.png';
 
 class TweetBox extends React.Component {
@@ -81,28 +82,51 @@ class TweetBox extends React.Component {
             @realDonaldTrump
           </div>
           <div className="uwu">
-            <button className="followButton">
+            <span className="follow">
+              <button className="followButton">
+                <img
+                  src="https://img.icons8.com/fluent/48/000000/twitter.png"
+                  alt="twitterFollow"
+                  width="20px"
+                />
+                <span className="wordfollow">Follow</span>
+              </button>
               <img
+                className="ml-10 mt-10"
                 src="https://img.icons8.com/fluent/48/000000/twitter.png"
                 alt="twitterFollow"
                 width="20px"
+                height="20px"
               />
-              <span id="wordfollow">Follow</span>
-            </button>
-            <img
-              src="https://img.icons8.com/fluent/48/000000/twitter.png"
-              alt="twitterFollow"
-              width="20px"
-              height="20px"
-            />
+            </span>
           </div>
           <p id="tweet">{this.tweets[this.state.index]}</p>
           <p id="time">{this.state.currTime}</p>
+          <ul className="twitterActions">
+            <li>
+              {/* <img
+                src="https://img.icons8.com/cute-clipart/64/000000/reply-arrow.png"
+                alt="reply"
+                width="20px"
+                height="20px"
+              /> */}
+            </li>
+            <li>
+              <img src={retweet} alt="retweet" />
+            </li>
+            <li>
+              {/* <img
+                src="https://img.icons8.com/emoji/48/000000/blue-heart.png"
+                alt="like"
+                width="20px"
+                height="20px"
+              /> */}
+            </li>
+          </ul>
         </div>
         <button className="big-btn" onClick={this.handleClick}>
           Generate a Tweet!
         </button>
-        <ul className="twitterActions"></ul>
       </div>
     );
   }
